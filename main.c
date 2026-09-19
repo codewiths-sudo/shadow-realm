@@ -55,8 +55,7 @@ int main() {
                 } else {
                     printf("\nInvalid path selection!\n\n");
                 }
-
-                // Dragon Encounter Section inside case 1
+                
                 printf("Moving forward, you reach the main chamber of the cave! A giant red dragon is sleeping there.\n");
                 printf("Behind the dragon, there is a chest filled with gold!\n\n");
                 printf("1. Attack the dragon.\n");
@@ -69,19 +68,19 @@ int main() {
                 if (choice2 == 1) {
                     if (p1.attack_power >= 15) {
                         printf("\nYou bravely charged with your sword and defeated the dragon!\n");
-                        printf("🎉 YOU WIN THE GAME!\n\n");
+                        printf(" YOU WIN THE GAME!\n\n");
                     } else {
                         printf("\nThe dragon woke up and unleashed fire! You couldn't survive.\n");
-                        printf("💀 GAME OVER!\n\n");
+                        printf(" GAME OVER!\n\n");
                     }
                 } else if (choice2 == 2) {
                     if (p1.health > 40) {
                         p1.gold += 500;
                         printf("\nYou carefully walked past the dragon and stole the treasure! (Current Gold: %d)\n", p1.gold);
-                        printf("🏆 SECRET ENDING UNLOCKED!\n\n");
+                        printf(" SECRET ENDING UNLOCKED!\n\n");
                     } else {
                         printf("\nYour low health made you stumble. The dragon woke up and devoured you!\n");
-                        printf("💀 GAME OVER!\n\n");
+                        printf(" GAME OVER!\n\n");
                     }
                 } else if (choice2 == 3) {
                     printf("\nYou ran out of the cave in fear! You survived, but gained no treasure.\n\n");
