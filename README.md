@@ -14,7 +14,7 @@ Welcome to **Shadow Realm**, a terminal-based RPG adventure game written in C! E
 ##  How to Run the Game
 
 ### Prerequisites
-* A C compiler (like GCC) installed on your system.
+* A C compiler (like GCC,MinGW) installed on your system.
 
 ### Compilation & Execution`
 1. **Download the code:** Download this repository.
