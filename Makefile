@@ -1,11 +1,19 @@
 CC = gcc
 CFLAGS = -Wall -g
+TARGET = main
 
-all = main
+ifeq ($(OS),Windows_NT)
+    RM = del /Q /F
+    EXT = .exe
+else
+    RM = rm -f
+    EXT =
+endif
 
-main: main.c
-		$(CC) $(CFLAGS) main.c -o main
+all: $(TARGET)$(EXT)
+
+$(TARGET)$(EXT): main.c
+	$(CC) $(CFLAGS) main.c -o $(TARGET)$(EXT)
 
 clean:
-		rm -f main
-		rm -f main.exe
+	-$(RM) $(TARGET)$(EXT)
