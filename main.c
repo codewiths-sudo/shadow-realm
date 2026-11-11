@@ -8,11 +8,6 @@ typedef struct {
     int attack_power;  
 } player;
 
-typedef struct {
-    int health;
-    int attack_power;
-} dragon;
-
 int main() {
     int choice;
     int choice2;
@@ -20,12 +15,9 @@ int main() {
     int *ptr1 = &choice;
     int *ptr2 = &choice2;
 
-
     player p1 = {"Curl", 50, 100, 20, 15};
-    dragon d1 = {100, 100};
 
     player *ptr3 = &p1;
-    player *ptr4 = &d1;
 
     printf("========================================\n");
     printf("        WELCOME TO SHADOW REALM        \n");
