@@ -1,2 +1,9 @@
 *.exe
 *.o
+*.a.out
+
+*.so
+*.dll
+
+# linux binary
+main
