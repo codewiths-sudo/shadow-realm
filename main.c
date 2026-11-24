@@ -2,8 +2,7 @@
 
 typedef struct {
     char player_name[50];   
-    int health;        
-    const int max_health;    
+    int health;           
     int gold;          
     int attack_power;  
 } player;
@@ -15,7 +14,7 @@ int main() {
     int *ptr1 = &choice;
     int *ptr2 = &choice2;
 
-    player p1 = {"Curl", 50, 100, 20, 15};
+    player p1 = {"Curl", 50, 20, 15};
 
     player *ptr3 = &p1;
 
@@ -43,7 +42,7 @@ int main() {
                 printf("2. Right path (Pitch dark, strange noises coming)\n");
                 
                 printf("What is your choice? (1 or 2): ");
-                scanf("%d", &choice);
+                scanf("%d", ptr1);
 
                 if (*ptr1 == 1) {
                     ptr3->health += 20;
